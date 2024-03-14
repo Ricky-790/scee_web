@@ -1,13 +1,13 @@
-// import Card from './components/Card/Card'
-import Events from './components/Events/Events'
-//import Events from './components/Events/Events'
+import Card from './components/Card/Card'
+// import Events from './components/Events/Events'
+
 import './style/App.css'
 
 function App() {
   return (
     <>
-    <Events/>
-      {/* <Card/> */}
+    {/* <Events/> */}
+      <Card/>
     </>
   )
 }

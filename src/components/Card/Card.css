@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #034378, #2d4e68);
+  /* background-image: linear-gradient(to right, #034378, #2d4e68); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
@@ -22,7 +22,7 @@ h1 {
 }
 
 .row {
-  max-width: 900px;
+  max-width: 700px;
   margin: 50px auto 0;
 }
 
@@ -67,11 +67,12 @@ h1 {
   min-height: 360px;
   position: relative;
   overflow: hidden;
+  border-radius: 40px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card .wrapper:hover .data {
-  transform: translateY(0);
+  transform: translateY(50px);
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
 }
@@ -83,6 +84,7 @@ h1 {
   transition: transform 0.3s;
 }
 .card .data .content {
+  text-align: center;
   padding: 1em;
   position: relative;
   z-index: 1;
@@ -103,9 +105,9 @@ h1 {
 .card input[type=checkbox]:checked + .menu-content {
   transform: translateY(-60px);
 }
-.example-2 .wrapper {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;
-}
+/* .example-2 .wrapper {
+  background: url(https://media.istockphoto.com/id/597958694/photo/young-adult-male-student-in-the-lobby-of-a-university.jpg?s=612x612&w=0&k=20&c=QaNEzmcKrLJzmwOcu2lgwm1B7rm3Ouq2McYYdmoMGpU=) center/cover no-repeat;
+} */
 .example-2 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
@@ -129,6 +131,7 @@ h1 {
   float: right;
 }
 .example-2 .menu-content li {
+  color: rgb(0, 0, 0);
   margin: 0 5px;
   position: relative;
 }
@@ -137,7 +140,8 @@ h1 {
   opacity: 0;
 }
 .example-2 .data {
-  color: #fff;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(calc(70px + 4em));
 }
 .example-2 .title a {
